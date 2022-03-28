@@ -11,7 +11,7 @@ from odoo import api, fields, models
 class ResPartner(models.Model):
     """Partner with birth date in date format."""
 
-    _inherit = "res.partner"
+    _inherit = "veterinaria"
 
     birthdate_date = fields.Date("Birthdate")
     age = fields.Integer(readonly=True, compute="_compute_age")
